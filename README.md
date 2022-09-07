@@ -96,7 +96,7 @@ Circular: Loop until it finds an issue, if one connection fails, it will do 15 m
 > Netsh is used to packet capture via CMD.
   
 #### How is the file converted from ETL to PCAPNG?
-> Using the tool ETL2PCAPNG
+> The utility etl2pcapng is used. You can review more on about it on https://github.com/microsoft/etl2pcapng.
  
 #### Do i need to open the file in admin mode?
 >Yes, otherwise it's not possible to run Netsh on the CMD.
