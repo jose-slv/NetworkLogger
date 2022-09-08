@@ -5,8 +5,8 @@
 
 --------
 ### Why use NetworkLogger
-> If you work in the Networking field long enough you will find those peculiar cases in which there's some comunications issues at a random time and no one can pinpoint exactly what the issue is, when it will happen again or how to solve it.
-With NetworkLogger you'll be able to have constant TCP connections made to a specific destination of your choice, all tcp connections will be analysed and in the event one of those fails, the proccess will automatically conclude, generating information of all the TCP connections along with the specific Timestamps and of course a packet capture of at the time of the issue.
+> * If you work in the Networking field long enough you will find those peculiar cases in which there's some comunication issues at a random time, and no one can pinpoint exactly what the issue is, when it will happen again or how to solve it.
+> * With NetworkLogger you'll be able to have constant TCP connections made to a specific destination of your choice, all tcp connections will be analysed and in the event one of those fails, the proccess will automatically conclude, generating information of all the TCP connections along with the specific Timestamps and of course a packet capture of at the time of the issue.
 
 ### built in Scenarios
 
