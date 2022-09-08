@@ -13,7 +13,7 @@
 | Scenario| behaviour | When to Use|
 | --- | --- | --- |
 |Normal | Performs 10 TCP connections and concludes the proccess. | This is helpful for OnGoing issues in which you need to replicate the TCP connection and packet capture the process|
-|Circular | Loops until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.| Useful in intermitent issues, in which you need to understand what happens behind the scenes and when.|
+|Circular | Loops until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.| Useful in intermitent issues, in which you need to understand what happens behind the scenes at the time of the issue.|
 |Persistent | Loops until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess| This is similar with the Circular scenario, however it will keep running for 2 extra full minutes so you are able to understand in more depth what happens after that first failure to comunicate to the destination.
 
 --------
