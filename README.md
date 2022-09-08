@@ -6,7 +6,7 @@
 --------
 ### Why use NetworkLogger
 > * If you work in the Networking field long enough you will find those peculiar cases in which there's some comunication issues at a random time, and no one can pinpoint exactly what the issue is, when it will happen again or how to solve it.
-> * With NetworkLogger you'll be able to have constant TCP connections made to a specific destination of your choice, all tcp connections will be analysed and in the event one of those fails, the proccess will automatically conclude, generating information of all the TCP connections along with the specific Timestamps and of course a packet capture of at the time of the issue.
+> * With NetworkLogger you'll be able to have constant TCP connections made to a specific destination of your choice, all tcp connections will be analysed and in the event one of those fails, the proccess will automatically conclude, generating information of all the TCP connections along with the specific Timestamps, and of course a packet capture of at the time of the issue already converted to pcapng.
 
 ### built in Scenarios
 
@@ -14,7 +14,7 @@
 | --- | --- | --- |
 |Normal | Performs 10 TCP connections and concludes the proccess. | This is helpful for OnGoing issues in which you need to replicate the TCP connection and packet capture the process|
 |Circular | Loops until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.| Useful in intermitent issues, in which you need to understand what happens behind the scenes at the time of the issue.|
-|Persistent | Loops until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess| This is similar with the Circular scenario, however it will keep running for 2 extra full minutes so you are able to understand in more depth what happens after that first failure to comunicate to the destination.
+|Persistent | Loops until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess| This is similar with the Circular scenario, however it will keep running for 2 extra full minutes, so you will be able to understand in more depth what happens after that first TCP failure happens.
 
 --------
 
