@@ -4,8 +4,21 @@
 >New tool to generate TCP traffic and packet capture according to your needs.
 
 --------
+### Why use NetworkLogger
+> If you work in the Networking field long enough you will find those peculiar cases in which there's some comunications issues at a random time and no one can pinpoint exactly what the issue is, when it will happen again or how to solve it.
+With NetworkLogger you'll be able to have constant TCP connections made to a specific destination of your choice, all tcp connections will be analysed and in the event one of those fails, the proccess will automatically conclude, generating information of all the TCP connections along with the specific Timestamps and of course a packet capture of at the time of the issue.
 
-### Simple tutorial on how to work with NetworkLogger.
+### built in Scenarios
+
+| Scenario| behaviour | When to Use|
+| --- | --- | --- |
+|Normal | Performs 10 TCP connections and concludes the proccess. | This is helpful for OnGoing issues in which you need to replicate the TCP connection and packet capture the process|
+|Circular | Loops until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.| Useful in intermitent issues, in which you need to understand what happens behind the scenes and when.|
+|Persistent | Loops until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess| This is similar with the Circular scenario, however it will keep running for 2 extra full minutes so you are able to understand in more depth what happens after that first failure to comunicate to the destination.
+
+--------
+
+### How to use Network Logger.
 
 #### The folder will have the following files:
 
@@ -29,7 +42,6 @@
 Generate TCP traffic and Packet Capture:  "<DestinationIP/FQDN>,<TCPport>,<Normal/Circular/Circular>" Ex: 1.1.1.1,80,normal
 Simply packet capture: "**"
 ````
-
 ### A packet capture choice of either Normal or Circular would lead us to the next window:
 
  ![image](https://user-images.githubusercontent.com/110167869/182665288-6b4fbc5a-80b0-4626-aad2-f5676179a120.png)
@@ -52,12 +64,6 @@ Simply packet capture: "**"
 
  
 ##### After concluding the TCP connections:
-  
-```
-Normal : 10 TCP connections.
-Circular: Loop until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.
-Persistent: Loop until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess.
-```
   
 ##### Pop up indicating Netsh packet stopped and files generated.
   
