@@ -26,7 +26,7 @@
 #### Now we can insert the string following the syntax:
 
 ```
-Generate TCP traffic and Packet Capture:  "<DestinationIP>,<TCPport>,<Normal/Circular>" Ex: 1.1.1.1,80,normal
+Generate TCP traffic and Packet Capture:  "<DestinationIP/FQDN>,<TCPport>,<Normal/Circular/Circular>" Ex: 1.1.1.1,80,normal
 Simply packet capture: "**"
 ````
 
@@ -55,7 +55,8 @@ Simply packet capture: "**"
   
 ```
 Normal : 10 TCP connections.
-Circular: Loop until it finds an issue, if one connection fails, it will do 15 more TCP connections and conclude the proccess.
+Circular: Loop until an issue is found, once there's a connection failure, perform 15 more iterations of the TCP connection and conclude the proccess.
+Persistent: Loop until an issue is found, once there's a connection failure, continue the test for 2 more minutes and conclude the proccess.
 ```
   
 ##### Pop up indicating Netsh packet stopped and files generated.
